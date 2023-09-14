@@ -1,0 +1,18 @@
+{
+    "name":"Ad-blocker",
+    "version":"1.0.0",
+    "description":"Ad-blocker chrome extension",
+    "permissions":["declarativeNetRequest"],
+    "declarative_net_request":{
+        "rule_resources":[
+            {
+                "id":"ruleset_1",
+                "enabled":true,
+                "path":"rules.json"
+            }
+        ]
+    },
+    
+    
+    "manifest_version":3
+}
