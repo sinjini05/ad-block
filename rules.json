@@ -1,16 +1,24 @@
 [
     {
-        "id":1,
-        "priority":1,
-        "action":{"type":"block"},
-        "condition":{"urlFilter":"*://*doubleclick.net/*"}
-
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "*://*.doubleclick.net/*",
+            "resourceTypes": ["script", "image", "xhr"] // Specify resource types to block
+        }
     },
     {
-        "id":2,
-        "priority":1,
-        "action":{"type":"block"},
-        "condition":{"urlFilter":"*://googleadservies.com/*"}
-
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "*://*.googleadservices.com/*",
+            "resourceTypes": ["script", "image", "xhr"] // Specify resource types to block
+        }
     }
 ]
